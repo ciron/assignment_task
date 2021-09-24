@@ -1,13 +1,13 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
+@section('frontend_content')
+  <!-- start contact form section -->
+  <section class="wow fadeIn big-section" id="section-down">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-12 md-margin-30px-bottom wow fadeInLeft">
+                <div class="padding-fifteen-all bg-light-gray border-radius-6 lg-padding-seven-all sm-padding-30px-all h-100">
+                    <span class="text-extra-dark-gray alt-font text-large font-weight-600 margin-25px-bottom d-block">Ready to get started?</span>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -98,5 +98,6 @@
             </div>
         </div>
     </div>
-</div>
+</section>
+
 @endsection
